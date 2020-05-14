@@ -28,6 +28,8 @@ TARGET_BOOT_ANIMATION_RES := 1080
 #GApps
 TARGET_GAPPS_ARCH := arm64
 
+IS_PHONE := true
+
 # Device identifier. This must come after all inclusions
 PRODUCT_NAME := aosp_lithium
 PRODUCT_DEVICE := lithium
