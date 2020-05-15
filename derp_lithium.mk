@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/lithium/device.mk)
 
 # Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 #GApps
@@ -31,7 +31,7 @@ TARGET_GAPPS_ARCH := arm64
 IS_PHONE := true
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := aosp_lithium
+PRODUCT_NAME := derp_lithium
 PRODUCT_DEVICE := lithium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi Mix
