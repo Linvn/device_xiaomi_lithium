@@ -21,7 +21,8 @@
      for different hardware and product builds. -->
 <resources>
 	<!--Brightness Bar Beautification   -->
-	<dimen name="seek_bar_height">26dp</dimen>
+	<dimen name="seek_bar_height">12dp</dimen>
 	<dimen name="seek_bar_corner_radius">6dp</dimen>
+	<dimen name="brightness_mirror_height">0.1dp</dimen>
 </resources>
 
