@@ -20,7 +20,7 @@
                android:tint="?android:attr/colorControlActivated">
             <size android:height="24dp" />
             <solid android:color="@color/white_disabled" />
-            <corners android:radius="6dp" />
+            <corners android:radius="12dp" />
         </shape>
     </item>
     <item android:id="@android:id/progress"
@@ -30,7 +30,7 @@
                    android:tint="?android:attr/colorControlActivated">
                 <size android:height="24dp" />
                 <solid android:color="@android:color/white" />
-                <corners android:radius="6dp" />
+                <corners android:radius="12dp" />
             </shape>
         </scale>
     </item>
