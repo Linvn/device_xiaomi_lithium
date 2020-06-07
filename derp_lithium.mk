@@ -25,8 +25,11 @@ $(call inherit-product, device/xiaomi/lithium/device.mk)
 $(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
+#Build Vanilla
+DERP_BUILD_ZIP_TYPE := VANILLA
+
 #GApps
-TARGET_GAPPS_ARCH := arm64
+# TARGET_GAPPS_ARCH := arm64
 
 IS_PHONE := true
 
