@@ -52,14 +52,15 @@ on enable-low-power
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "interactive"
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_sched_load 1
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_migration_notif 1
-    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/above_hispeed_delay 19000
-    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/go_hispeed_load 90
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/above_hispeed_delay "38000 1132000:18000 1209000:58000 1286000:78000 1363000:38000 1440000:78000 1516000:38000 1593000:58000"
+                   
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/go_hispeed_load 95
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/timer_rate 20000
-    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/hispeed_freq 960000
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/hispeed_freq 979000
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/io_is_busy 1
-    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/target_loads 80
-    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/min_sample_time 19000
-    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/max_freq_hysteresis 79000
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/target_loads  "80 384000:59 460000:67 537000:58 614000:67 691000:70 768000:56 844000:76 902000:74 979000:85 1056000:83 1132000:76 1209000:62 1286000:49 1363000:62 1440000:97 1516000:78 1593000:70"
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/min_sample_time 18000
+    write /sys/devices/system/cpu/cpu0/cpufreq/interactive/max_freq_hysteresis 18000
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 307200
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/ignore_hispeed_on_notif 1
     write /sys/devices/system/cpu/cpu0/cpufreq/interactive/enable_prediction 1
@@ -71,14 +72,14 @@ on enable-low-power
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor "interactive"
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/use_sched_load 1
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/use_migration_notif 1
-    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/above_hispeed_delay "19000 1400000:39000 1700000:19000 2100000:79000"
-    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/go_hispeed_load 90
+    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/above_hispeed_delay "78000 691000:58000 748000:78000 825000:18000 902000:58000 1056000:78000 1132000:18000 1209000:58000 1440000:78000 1516000:58000 1593000:38000 1670000:78000 1747000:58000 1900000:38000 2054000:58000 2150000:78000 2246000:38000"
+    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/go_hispeed_load 84
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/timer_rate 20000
-    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/hispeed_freq 1248000
+    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/hispeed_freq 614000
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/io_is_busy 1
-    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/target_loads "85 1500000:90 1800000:70 2100000:95"
-    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/min_sample_time 19000
-    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/max_freq_hysteresis 79000
+    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/target_loads "28 384000:24 460000:46 537000:37 614000:29 691000:50 748000:57 825000:73 902000:67 979000:59 1056000:56 1132000:87 1209000:90 1286000:87 1363000:71 1440000:56 1516000:33 1593000:15 1670000:3 1747000:70 1824000:99 1900000:77 1977000:97 2054000:98"
+    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/min_sample_time 18000
+    write /sys/devices/system/cpu/cpu2/cpufreq/interactive/max_freq_hysteresis 18000
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq 307200
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/ignore_hispeed_on_notif 1
     write /sys/devices/system/cpu/cpu2/cpufreq/interactive/enable_prediction 1
@@ -96,8 +97,8 @@ on enable-low-power
 
     # Set big.LITTLE scheduler parameters
     write /proc/sys/kernel/sched_boost 0
-    write /proc/sys/kernel/sched_downmigrate 90
-    write /proc/sys/kernel/sched_upmigrate 95
+    write /proc/sys/kernel/sched_downmigrate 45
+    write /proc/sys/kernel/sched_upmigrate 45
     write /proc/sys/kernel/sched_freq_inc_notify 400000
     write /proc/sys/kernel/sched_freq_dec_notify 400000
     write /proc/sys/kernel/sched_spill_nr_run 3
