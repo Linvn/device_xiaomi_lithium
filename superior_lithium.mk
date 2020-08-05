@@ -35,6 +35,16 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 IS_PHONE := true
 
+#lawnchair3
+# TARGET_LAUNCHER := lawnchair
+
+# Launcher
+TARGET_LAUNCHER := oplauncher
+
+# Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.superior.maintainer=Lin
+
 # Device identifier. This must come after all inclusions
 PRODUCT_NAME := superior_lithium
 PRODUCT_DEVICE := lithium
